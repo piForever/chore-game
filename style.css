@@ -1,12 +1,22 @@
+@font-face { font-family: "Monster" ; 
+             font-style: normal; 
+             src: url('Monster AG.ttf') format('truetype'); 
+          
+            } 
+             /*   agregar ? font-weight: 400;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; */ 
 
 body {
     background-color: #010165;
     margin: 0px;
   }
   
+  
   .header {
-    background-color: #00ffff;
+    background-color: #1875c0;
     text-align: center; 
+    font-family: "Monster";
+    font-size: larger;
   }
   .door-frame {
     cursor: pointer;
@@ -19,9 +29,9 @@ body {
   }
   .instructions-title{
   display:inline;
+ 
   font-size : 18px;
-  color : #00ffff;
-  font-family : ‘Work Sans’;
+  color : #1875c0;
   }
   
   .instructions-row{
@@ -32,16 +42,14 @@ body {
   
   .instructions-number{
     padding-right : 25px ;
-  font-family : ‘Work Sans’ ;
   font-size : 36px ;
-  color : #00ffff ;
+  color : #1875c0 ;
   }
   
   .instructions-text{
     padding : 10px ;
-  font-family : ‘Work Sans’ ;
   font-size : 14px ;
-  color : #ffffff ;
+  color : #9bdf2f ;
   }
   
   .door-row{
@@ -51,8 +59,7 @@ body {
     margin : auto;
   width : 120px;
   height : 43px;
-  font-family : ‘Work Sans’;
-  background-color : #eb6536;
+  background-color : #9bdf2f;
   padding-top : 18px;
   font-size : 18px;
   text-align : center;
