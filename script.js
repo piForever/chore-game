@@ -12,7 +12,7 @@ let numClosedDoors= 4;
 let openDoor1 ;
 let openDoor2 ; 
 let openDoor3 ; 
-let closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"; 
+let closedDoorPath = "closed_door.png"; 
 let currentlyPlaying  = true ; 
 
 
