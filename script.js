@@ -17,7 +17,7 @@ let currentlyPlaying  = true ;
 
 
 const isBoo = (door) => {
-if (door.src === boo){
+if (door.src = boo){
 return true;
 }else {
 return false ;
@@ -25,7 +25,7 @@ return false ;
 }
 
 const isClicked = (door) => {
-  if (door.src === closedDoorPath){
+  if (door.src = closedDoorPath){
 return false ;
   } else {
     return true ;
