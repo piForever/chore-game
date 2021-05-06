@@ -17,7 +17,7 @@ let currentlyPlaying  = true ;
 
 
 const isBoo = (door) => {
-if (door.src == boo){
+if (door.src == "file:///C:/coding/coding/tests/monstersgame/boo.png"){
 return true;
 }else {
 return false ;
@@ -25,7 +25,7 @@ return false ;
 }
 
 const isClicked = (door) => {
-  if (door.src = closedDoorPath){
+  if (door.src == "file:///C:/coding/coding/tests/monstersgame/closed_door.png"){
 return false ;
   } else {
     return true ;
@@ -111,5 +111,3 @@ currentlyPlaying = false ;
  playDoor();
 
 startRound();
-
-
