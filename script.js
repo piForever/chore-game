@@ -17,7 +17,7 @@ let currentlyPlaying  = true ;
 
 
 const isBoo = (door) => {
-if (door.src = boo){
+if (door.src == boo){
 return true;
 }else {
 return false ;
