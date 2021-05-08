@@ -15,9 +15,18 @@ let openDoor3 ;
 let closedDoorPath = "closed_door.png"; 
 let currentlyPlaying  = true ; 
 
+const path = (door) => {
+  let res = door.src;
+  let array = res.split("/") ;
+ // return array[array.lenght - 1]
+ return array[8]
+  
+
+}
+
 
 const isBoo = (door) => {
-if (door.src === boo){
+if ( door == boo){
 //if (door.src == "file:///C:/coding/coding/tests/monstersgame/boo.png"){
 return true;
 }else {
@@ -26,7 +35,9 @@ return false ;
 }
 
 const isClicked = (door) => {
- if (door.src == closedDoorPath){
+ if (door == closedDoorPath){
+ // if (door.src == "file:///C:/coding/coding/tests/monstersgame/closed_door.png"){
+
 return false ;
   } else {
     return true ;
@@ -41,13 +52,13 @@ gameOver()
   }
 }
 
-const randomChoreDoorGenerator = () => {
-let choreDoor = Math.floor ( Math.random() * numClosedDoors);
-if (choreDoor === 0){
+const randomBooDoorGenerator = () => {
+let booDoor = Math.floor ( Math.random() * numClosedDoors);
+if (booDoor === 0){
 openDoor1 = boo ;
 openDoor2 = mike;
 openDoor3 = sullivan ;
-} else if (choreDoor === 1){
+} else if (booDoor === 1){
 openDoor1 = mike;
 openDoor2 = boo;
 openDoor3 = sullivan;
@@ -59,9 +70,9 @@ openDoor3 = boo ;
 }
 
 doorImage1.onclick = () => {
-if (currentlyPlaying && !isClicked(doorImage1)){
+if (currentlyPlaying && !isClicked(path(doorImage1))){
 doorImage1.src = openDoor1;
-playDoor(doorImage1);
+playDoor(path(doorImage1));
 }
 
 }
@@ -69,18 +80,18 @@ playDoor(doorImage1);
  
 
 doorImage2.onclick = () => {
- if (currentlyPlaying && !isClicked(doorImage2)){
+ if (currentlyPlaying && !isClicked(path(doorImage2))){
 doorImage2.src = openDoor2 ; 
-playDoor(doorImage2);
+playDoor(path(doorImage2));
 }
  
 }
 
 
 doorImage3.onclick = () => {
-if (currentlyPlaying && !isClicked(doorImage3)){
+if (currentlyPlaying && !isClicked(path(doorImage3))){
 doorImage3.src = openDoor3;
-playDoor(doorImage3);
+playDoor(path(doorImage3));
 }
 
 }
@@ -90,9 +101,9 @@ numClosedDoors = 3;
 doorImage1.src = closedDoorPath;
 doorImage2.src = closedDoorPath;
 doorImage3.src = closedDoorPath;
-startButton.innerHTML = 'Good luck!';
+startButton.innerHTML = 'Start!';
 currentlyPlaying= true ;
-randomChoreDoorGenerator() ; 
+randomBooDoorGenerator() ; 
 
 }; 
 startButton.onclick = ()=> {
