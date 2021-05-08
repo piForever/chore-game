@@ -18,16 +18,13 @@ let currentlyPlaying  = true ;
 const path = (door) => {
   let res = door.src;
   let array = res.split("/") ;
- // return array[array.lenght - 1]
- return array[8]
-  
+  return array[array.length - 1] 
 
 }
 
 
 const isBoo = (door) => {
 if ( door == boo){
-//if (door.src == "file:///C:/coding/coding/tests/monstersgame/boo.png"){
 return true;
 }else {
 return false ;
@@ -36,8 +33,6 @@ return false ;
 
 const isClicked = (door) => {
  if (door == closedDoorPath){
- // if (door.src == "file:///C:/coding/coding/tests/monstersgame/closed_door.png"){
-
 return false ;
   } else {
     return true ;
