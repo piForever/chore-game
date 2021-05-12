@@ -21,6 +21,10 @@ body {
   .door-frame {
     cursor: pointer;
     padding : 10px ;
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    
   }
   .title-row{
     margin-top : 42px; 
